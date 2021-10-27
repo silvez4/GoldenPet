@@ -1,0 +1,52 @@
+.titulo{
+    position: relative;
+    margin-bottom: 2rem;
+}
+.titulo::after{
+    content: "";
+    background-color: var(--cor-gold);
+    position: absolute;
+    bottom: 0;
+    left: -50%;
+    height: 2px;
+    width: 200%;
+    text-shadow: 2px 0 0 var(--bg-preto), 3px 0 0 var(--bg-preto);
+}
+
+.cabecalho{
+    width: 95vw;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 10% 40% 20% 30%;
+    position: relative;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid var(--bg-preto);
+}
+
+.cabecalho h2{
+    border-right: 3px solid var(--cor-cinza);
+}
+
+.dados{
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/* .dados a{ */
+/* .btn{
+    font-size: 2rem;
+    font-weight: 800;
+    grid-area: 2 / 4;
+    text-decoration: none;
+    margin: .5rem 5rem;
+    padding: .5rem;
+    border-radius: 10rem;
+    color: var(--bg-preto);
+    background-color: var(--cor-gold);
+}
+
+.btn:hover{
+    color: var(--cor-gold);
+    background-color: var(--bg-preto);
+} */

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-white: rgba(255, 255, 255, 1);
+    --bg-azul: rgba(0, 204, 255, 0.4);
+    --bg-preto: #000000;
+    --bg-rosa: #F6217E;
+    --cor-gold: #FFBF00;
+    --cor-cinza: rgba(0, 0, 0, 0.3);
+    --cor-red:#ff0000;
+    --cor-dark-gray:#444444;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 62.5%;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    width: 100vw;
+    background-color: var(--cor-dark-gray);
+}
+
+header a{
+    display: block;
+}
+
+.head-logo{
+    /* background-image: url(./imagens/logo.jpeg); */
+    position: relative;
+    cursor: pointer;
+    /* background: url(../imagens/logo.jpeg) no-repeat center; */
+    background: url(../imagens/logo.jpeg) no-repeat center;
+    background-size: contain;
+    height: 5rem;
+    width: 5rem;
+    margin: 2rem 0;
+    border-radius: 50rem;
+}
+
+.titulo{
+    font-size: 3.2rem;
+    text-shadow: 2px 0 0 var(--bg-preto), 3px 0 0 var(--bg-preto);
+    color: var(--cor-gold);
+    margin-top: 2rem;
+}
+
+body{
+    width: 100vw;
+    /* overflow: hidden; */
+    background-color: var(--bg-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    font-size: 2rem;
+    font-weight: 800;
+    grid-area: 2 / 4;
+    text-decoration: none;
+    margin: .5rem;
+    padding: .5em;
+    border-radius: 10rem;
+    color: var(--bg-preto);
+    background-color: var(--cor-gold);
+}
+
+.btn:hover{
+    color: var(--cor-gold);
+    background-color: var(--bg-preto);
+}
+
+.label{
+    font-size: 2rem;
+    /*text-shadow: 2px 0 0 var(--bg-preto), 3px 0 0 var(--bg-preto);*/
+    color: var(--bg-preto);
+    margin-top: 2rem;
+}
+
+.select{
+    margin-top: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    min-width: 10vw;
+    min-height: 5vh;
+    border-bottom: 3px solid var(--bg-azul);
+    border-left: 3px solid var(--bg-azul);
+}
+
+.sucesso{
+    font-size: 1.5rem;
+    color: rgb(19, 145, 19);
+}
+
+#entId{
+    color: var(--cor-gold);
+    background-color: #d2d2d2;
+}
